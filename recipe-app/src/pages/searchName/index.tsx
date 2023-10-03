@@ -11,12 +11,9 @@ export const SearchName = () => {
   const [data, setData] = useState<iCard[]>([]);
 
   const handleKeyDown = (event: any) => {
-    console.log("Key pressed: ", event.key);
-
     if (event.key === "Enter") {
       event.preventDefault();
       fetchData();
-      console.log("Current input: ", message);
     }
   };
 
@@ -25,7 +22,6 @@ export const SearchName = () => {
       axios
         .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${message}`)
         .then((res) => {
-          console.log("printando res: ", res);
           setData(res.data.meals);
         })
         .catch(console.error);
@@ -48,9 +44,6 @@ export const SearchName = () => {
   //   }
   // }, [data, message]);
 
-  console.log("Current input: ", message);
-
-  console.log(data);
   return (
     <div>
       <Header></Header>

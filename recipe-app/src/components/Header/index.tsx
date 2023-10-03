@@ -12,7 +12,7 @@ export const Header = () => {
       </Container>
       <Container>
         <Links href="/searchName">Pesquisar Receitas</Links>
-        <Links href="">Listar por primeira letra</Links>
+        <Links href="/SearchFirstLetter">Listar por primeira letra</Links>
         <Links href="">Listar por ingrediente</Links>
       </Container>
     </StyledHeader>
