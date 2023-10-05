@@ -12,7 +12,6 @@ export const SearchFirstLetter = () => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   const fetchData = (item: string) => {
-    console.log("printando item: ", item);
     setCurrentLetter(item);
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/search.php?f=${item}`)
@@ -21,8 +20,6 @@ export const SearchFirstLetter = () => {
       })
       .catch(console.error);
   };
-
-  console.log("Printando data: ", data);
 
   return (
     <div>

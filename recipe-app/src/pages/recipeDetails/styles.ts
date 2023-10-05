@@ -18,4 +18,31 @@ export const LinkVideo = styled(Link)`
   text-decoration: none;
 `;
 
-export const LinkFonte = styled(Link)``;
+export const LinkFonte = styled(Link)`
+  color: white;
+  border-radius: 10px;
+  background-color: grey;
+  padding: 10px;
+  text-decoration: none;
+`;
+
+export const ContainerInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* padding: 0 4px; */
+  margin-bottom: 20px;
+`;
+
+export const ContainerLinks = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+export const RecipeResultImg = styled.img`
+  width: 100%;
+`;

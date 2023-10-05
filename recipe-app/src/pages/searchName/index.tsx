@@ -30,20 +30,6 @@ export const SearchName = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (message) {
-  //     axios
-  //       .get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${message}`)
-  //       .then((res) => {
-  //         console.log("printando res: ", res);
-  //         setData(res.data.meals);
-  //       })
-  //       .catch(console.error);
-  //   } else {
-  //     setData([]);
-  //   }
-  // }, [data, message]);
-
   return (
     <div>
       <Header></Header>

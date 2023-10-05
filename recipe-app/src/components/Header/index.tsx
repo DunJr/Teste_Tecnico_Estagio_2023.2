@@ -13,7 +13,7 @@ export const Header = () => {
       <Container>
         <Links href="/searchName">Pesquisar Receitas</Links>
         <Links href="/SearchFirstLetter">Listar por primeira letra</Links>
-        <Links href="">Listar por ingrediente</Links>
+        <Links href="/searchIngredients">Listar por ingrediente</Links>
       </Container>
     </StyledHeader>
   );

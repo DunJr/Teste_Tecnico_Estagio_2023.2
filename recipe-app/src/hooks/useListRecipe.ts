@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import { iCard } from "../components/Card";
+import { iCard } from "../components/Card/types";
 
 const useListRecipe = () => {
   const [data, setData] = useState<iCard[]>([]);
@@ -10,7 +10,6 @@ const useListRecipe = () => {
       axios
         .get("https://www.themealdb.com/api/json/v1/1/random.php")
         .then((res) => {
-          console.log("Print index: ", i, res);
           setData((prevState) => [...prevState, res.data.meals[0]]);
         })
         .catch(console.error);
@@ -18,7 +17,6 @@ const useListRecipe = () => {
   }, []);
 
   useEffect(() => {
-    console.log("Renderizei!");
     fetchData();
   }, [fetchData]);
 

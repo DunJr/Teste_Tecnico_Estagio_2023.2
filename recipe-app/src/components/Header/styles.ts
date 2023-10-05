@@ -6,14 +6,13 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 35px;
   background-color: white;
 `;
 
 export const Container = styled.div`
   display: flex;
   text-decoration: none;
-  margin: 0 30px;
+  padding: 0 30px;
   gap: 10px;
 `;
 
