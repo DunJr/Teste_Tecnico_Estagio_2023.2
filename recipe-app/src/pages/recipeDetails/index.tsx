@@ -34,13 +34,13 @@ export const RecipeDetails = () => {
   const measureEntries = Object.entries(findObject ?? {});
 
   const ingredientElements = ingredientEntries.map(([key, value]) => {
-    if (key.includes("strIngredient") && value.trim() !== "") {
+    if (key?.includes("strIngredient") && value?.trim() !== "") {
       return <li key={key}>{value}</li>;
     }
   });
 
   const measureElements = measureEntries.map(([key, value]) => {
-    if (key.includes("strMeasure") && value.trim() !== "") {
+    if (key?.includes("strMeasure") && value?.trim() !== "") {
       return <li key={key}>{value}</li>;
     }
   });
