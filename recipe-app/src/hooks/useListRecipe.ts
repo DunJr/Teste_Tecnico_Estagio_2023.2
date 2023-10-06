@@ -7,6 +7,7 @@ const useListRecipe = () => {
 
   const fetchData = useCallback(() => {
     for (let i = 0; i < 6; i++) {
+      console.log(i);
       axios
         .get("https://www.themealdb.com/api/json/v1/1/random.php")
         .then((res) => {
@@ -17,7 +18,7 @@ const useListRecipe = () => {
   }, []);
 
   useEffect(() => {
-    fetchData();
+    if (!data.length) fetchData();
   }, [fetchData]);
 
   return { data };

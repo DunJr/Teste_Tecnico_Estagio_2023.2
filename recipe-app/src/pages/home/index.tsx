@@ -3,7 +3,7 @@ import Card from "../../components/Card/index.js";
 // import { iMeals } from "../../components/Card/index.js";
 import { useListRecipe } from "../../hooks";
 
-import { Home, Title } from "./styles";
+import { Container, Home, Title } from "./styles";
 import { Header } from "../../components/Header/index.js";
 
 export const HomePage = () => {
@@ -14,7 +14,9 @@ export const HomePage = () => {
       <Header></Header>
       <Home>
         <Title>Receitas Aleatórias</Title>
-        <Card meals={data} />
+        <Container>
+          <Card meals={data} />
+        </Container>
       </Home>
     </div>
   );

@@ -5,6 +5,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 export const ContainerCard = styled.div`
@@ -14,6 +19,9 @@ export const ContainerCard = styled.div`
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #dbdbdb;
+  @media (min-width: 744px) {
+    width: 30%;
+  }
 `;
 
 export const ContainerImg = styled.img`
@@ -23,14 +31,20 @@ export const ContainerImg = styled.img`
 `;
 
 export const ContainerCont = styled.div`
-  height: 180;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 0 0 24px 12px;
 `;
 
 export const LinkVideo = styled(Link)`
+  display: flex;
+  width: fit-content;
   color: white;
   border-radius: 10px;
   background-color: #da291c;
-  padding: 10px;
+  padding: 10px 16px;
   text-decoration: none;
 `;

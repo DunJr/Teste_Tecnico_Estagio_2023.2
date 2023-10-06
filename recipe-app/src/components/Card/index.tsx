@@ -24,8 +24,10 @@ const Card: React.FC<iMeals> = ({ meals }) => {
             alt={item?.strMeal}
           />
           <ContainerCont>
-            <h2>{item?.strMeal}</h2>
-            <p>{item?.strInstructions?.slice(0, 150)}</p>
+            <div>
+              <h2>{item?.strMeal}</h2>
+              <p>{item?.strInstructions?.slice(0, 150)}</p>
+            </div>
             <LinkVideo to={item?.strYoutube ?? "google.com"} target="_blank">
               YouTube
             </LinkVideo>
