@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import { Header } from "../../components/Header/index.js";
 import { useState } from "react";
-import Card, { iCard } from "../../components/Card/index.js";
-import { iMeals } from "../../components/Card/index.js";
+import { iCard } from "../../components/Card/types.js";
 import { Title, PageContent, SearchBar } from "./styles";
 import axios from "axios";
+import Card from "../../components/Card/index.js";
 
 export const SearchName = () => {
   const [message, setMessage] = useState<string>("");

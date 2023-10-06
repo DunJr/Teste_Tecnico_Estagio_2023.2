@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { PageContent, Title } from "./styles";
 import { useParams } from "react-router-dom";
 import { iCard } from "../../components/Card/types.ts";

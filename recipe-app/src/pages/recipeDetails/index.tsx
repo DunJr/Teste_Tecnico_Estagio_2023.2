@@ -1,6 +1,6 @@
 import axios from "axios";
 import { iCard } from "components/Card/types";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   PageContent,
@@ -17,7 +17,7 @@ export const RecipeDetails = () => {
   const params = useParams();
 
   const [data, setData] = useState<iCard[]>([]);
-  const [aux, setAux] = useState<any>([]);
+  // const [aux, setAux] = useState<any>([]);
 
   useEffect(() => {
     axios

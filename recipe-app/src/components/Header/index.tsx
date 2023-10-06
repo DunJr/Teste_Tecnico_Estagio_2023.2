@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { StyledHeader, Container, Links, Icon } from "./styles";
 import HomeIcon from "../../assets/header/home.svg";
 

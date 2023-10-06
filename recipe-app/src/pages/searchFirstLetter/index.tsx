@@ -1,9 +1,10 @@
-import React, { useCallback, useState } from "react";
-
+// import React, { useCallback, useState } from "react";
+import { useState } from "react";
 import { Header } from "../../components/Header/index.js";
 import { Title, PageContent, CardContainer, Abutton } from "./styles";
 import axios from "axios";
-import Card, { iCard } from "../../components/Card/index.js";
+import { iCard } from "../../components/Card/types.js";
+import Card from "../../components/Card/index.js";
 
 export const SearchFirstLetter = () => {
   const [data, setData] = useState<iCard[]>([]);

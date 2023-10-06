@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import Card from "../../components/Card/index.js";
-import { iMeals } from "../../components/Card/index.js";
+// import { iMeals } from "../../components/Card/index.js";
 import { useListRecipe } from "../../hooks";
 
 import { Home, Title } from "./styles";
