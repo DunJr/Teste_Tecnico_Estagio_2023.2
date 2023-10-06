@@ -4,7 +4,7 @@ interface iButtonProps {
 }
 
 export const Title = styled.h1`
-  color: #ffc72c;
+  color: #3a5a40;
 `;
 
 export const PageContent = styled.form`

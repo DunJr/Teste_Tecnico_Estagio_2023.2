@@ -17,5 +17,5 @@ export const Home = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #ffc72c;
+  color: #3a5a40;
 `;

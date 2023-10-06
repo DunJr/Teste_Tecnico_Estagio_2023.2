@@ -48,3 +48,7 @@ export const LinkVideo = styled(Link)`
   padding: 10px 16px;
   text-decoration: none;
 `;
+
+export const MealName = styled.h2`
+  color: #a3b18a;
+`;

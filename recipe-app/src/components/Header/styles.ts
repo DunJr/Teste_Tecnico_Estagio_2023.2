@@ -5,14 +5,17 @@ export const StyledHeader = styled.header`
   height: 59px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
+  padding: 0 16px;
+  gap: 32px;
+  justify-content: space-between;
 `;
 
 export const Container = styled.div`
   display: flex;
+  align-items: center;
+  white-space: nowrap;
   text-decoration: none;
-  padding: 0 30px;
   gap: 10px;
 `;
 
@@ -25,5 +28,5 @@ export const Icon = styled.img`
 export const Links = styled.a`
   text-decoration: none;
   font-size: 12px;
-  color: #da291c;
+  color: #588157;
 `;

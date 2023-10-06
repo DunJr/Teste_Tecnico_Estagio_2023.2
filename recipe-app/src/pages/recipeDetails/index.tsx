@@ -54,7 +54,7 @@ export const RecipeDetails = () => {
 
         <p>{`Categoria: ${findObject?.strCategory}`}</p>
         <p>{`Area: ${findObject?.strArea}`}</p>
-        <p>{`Tags: ${findObject?.strTags}`}</p>
+        <p>{`Tags: ${findObject?.strTags ?? "-"}`}</p>
         <p>{`Instruções: ${findObject?.strInstructions}`}</p>
 
         <ContainerInfo>

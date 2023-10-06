@@ -7,6 +7,7 @@ import {
   ContainerCard,
   LinkVideo,
   Container,
+  MealName,
 } from "./styles";
 
 import { iCard, iMeals } from "./types";
@@ -25,7 +26,7 @@ const Card: React.FC<iMeals> = ({ meals }) => {
           />
           <ContainerCont>
             <div>
-              <h2>{item?.strMeal}</h2>
+              <MealName>{item?.strMeal}</MealName>
               <p>{item?.strInstructions?.slice(0, 150)}</p>
             </div>
             <LinkVideo to={item?.strYoutube ?? "google.com"} target="_blank">

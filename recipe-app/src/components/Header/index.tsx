@@ -11,10 +11,11 @@ export const Header = () => {
         </a>
       </Container>
       <Container>
-        <Links href="/searchName">Pesquisar Receitas</Links>
-        <Links href="/SearchFirstLetter">Listar por primeira letra</Links>
-        <Links href="/searchIngredients">Listar por ingrediente</Links>
+        <Links href="/searchName">Pesquisar</Links>
+        <Links href="/SearchFirstLetter">Listar por Primeira Letra</Links>
+        <Links href="/searchIngredients">Listar por Ingrediente</Links>
       </Container>
+      <div />
     </StyledHeader>
   );
 };
